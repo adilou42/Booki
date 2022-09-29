@@ -21,8 +21,6 @@ h3 {
 	font-weight: bold;
 }
 
-/*navigation*/
-
 header {
 	display: flex;
 	flex-direction: row;
@@ -35,12 +33,6 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 20px;
-}
-
-.logo {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 
 .logo img {
@@ -80,13 +72,16 @@ nav a:hover {
 }
 
 ::placeholder {
-	color: black;
 	font-weight: bold;
 }
 
 .search-bar {
 	display: flex;
 	flex-direction: row;
+	border-style: solid;
+	border-color: #f2f2f2;
+	width: 24%;
+	border-radius: 15px;
 }
 
 #icon--map {
@@ -96,13 +91,14 @@ nav a:hover {
 	height: 35px;
 	width: 40px;
 	background-color: #f2f2f2;
-	border-radius: 15px 0px 0px 15px;
+	border-radius: 13px 0px 0px 13px;
 }
 
 #search-bar {
-	height: 35px;
 	border: 0;
+	height: 35px;
 	padding-left: 10px;
+	outline: none;
 }
 
 #button {
@@ -131,17 +127,21 @@ nav a:hover {
 	flex-direction: row;
 	align-items: center;
 	gap: 15px;
+	list-style-type: none;
 }
 
-.filter--ul li {
+.filter--ul li a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 10px;
 	border: 2px solid #f2f2f2;
-	/* padding: 5px; */
 	border-radius: 30px;
 	padding-right: 10px;
+}
+
+.filter a:hover {
+	color: #0065fc;
 }
 
 .filter a {
@@ -183,7 +183,7 @@ nav a:hover {
 	opacity: 0.7;
 }
 
-.hebergement {
+#hebergement {
 	background-color: #f2f2f2;
 	width: 68%;
 	border-radius: 20px;
@@ -239,7 +239,7 @@ nav a:hover {
 	color: #7a7d7f;
 }
 
-.hebergement a {
+#hebergement a {
 	text-decoration: none;
 	color: black;
 }
@@ -314,7 +314,7 @@ nav a:hover {
 	justify-content: space-between;
 }
 
-.activity {
+#activity {
 	display: flex;
 	flex-direction: column;
 	padding-top: 30px;
@@ -515,6 +515,10 @@ nav a:hover {
 	display: flex;
 	flex-direction: row;
 	gap: 250px;
+	background-color: #f2f2f2;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-bottom: 30px;
 }
 
 .footer h5 {
@@ -531,4 +535,9 @@ nav a:hover {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: black;
 }
